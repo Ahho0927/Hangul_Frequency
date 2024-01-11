@@ -70,7 +70,7 @@ count_hangul_chojong_reversed: int = 0
 
 # count
 print("Loading . . .")
-text_data = list_replace('[^각-힣]', '', text_data) # Non-Hangul Filtered
+text_data = list_replace('[^가-힣]', '', text_data) # Non-Hangul Filtered
 for letter in tqdm(text_data):
     cho, jung, jong = decompose(letter)
     
